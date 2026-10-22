@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn the basics of web designing, HTML, CSS and Bootstrap.">
+<meta name="keywords" content="web designing, HTML, CSS, Bootstrap">
+<meta name="author" content="Shlok Purwar">
+<title>Web Designing | Shlok Purwar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+background: #f5f7fa;
+}
+
+.intro {
+padding: 65px 20px; background: #e4edff;
+}
+
+.section-box { padding: 45px 20px;
+}
+
+footer {
+padding: 20px; background: #212529; color: white;
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-dark bg-dark" aria-label="Main navigation">
+<div class="container">
+<a class="navbar-brand" href="#home">Shlok Purwar's Web Page</a>
+ 
+
+<div class="navbar-nav flex-row gap-3">
+<a class="nav-link" href="#about">About</a>
+<a class="nav-link" href="#technologies">Technologies</a>
+<a class="nav-link" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main>
+<section id="home" class="intro text-center">
+<div class="container">
+<h1>Introduction to Web Designing</h1>
+<p class="lead">Learn how websites are structured and designed.</p>
+<a class="btn btn-primary" href="#about">Learn More</a>
+</div>
+</section>
+
+<section id="about" class="section-box">
+<div class="container">
+<h2>About Web Designing</h2>
+<p>
+Web designing involves planning the structure, appearance and usability of websites. HTML creates the structure,
+CSS styles the page, and Bootstrap helps build responsive layouts.
+</p>
+<img
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5 logo"
+width="130" height="130" class="img-fluid">
+</div>
+</section>
+
+<section id="technologies" class="section-box bg-white">
+<div class="container">
+<h2 class="mb-4">Basic Web Technologies</h2>
+<div class="row g-3">
+<article class="col-md-4">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="h4">HTML</h3>
+<p>HTML defines the content and structure of a webpage.</p>
+</div>
+</div>
+</article>
+ 
+
+<article class="col-md-4">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="h4">CSS</h3>
+<p>CSS controls colours, spacing, fonts and layout.</p>
+</div>
+</div>
+</article>
+
+<article class="col-md-4">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="h4">Bootstrap</h3>
+<p>Bootstrap provides reusable components and responsive grids.</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section-box text-center">
+<div class="container">
+<h2>Contact</h2>
+<a href="mailto:shlokpurwar0112@gmail.com"> shlokpurwar0112@gmail.com
+</a>
+</div>
+</section>
+</main>
+
+<footer class="text-center">
+<p class="mb-0">© 2026 Shlok Purwar</p>
+</footer>
+
+</body>
+</html>
