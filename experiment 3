@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My To-Do List</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>	body { background: #eef2f7;
+}
+
+.todo-box {	max-width: 650px; margin: 70px auto;		padding: 30px; background: white;		 border-radius: 12px;	box-shadow: 0 4px 15px
+#00000014;
+}
+
+.task-text { cursor: pointer;
+overflow-wrap: anywhere;
+}
+
+.completed {	text-decoration: line-through;
+color: #888;
+}
+</style>
+</head>
+<body>
+<main class="container">
+<div class="todo-box">
+ 
+<h1 class="text-center">My To-Do List</h1>
+<p class="text-center text-muted">Organize your daily tasks</p>
+
+JSS MAHAVIDYAPEETHA
+
+
+
+
+<div class="text-center mb-4">
+<span class="badge bg-light text-primary border px-3 py-2"> Click a task to complete · Click again to undo
+</span>
+</div>
+
+<form id="taskForm" class="input-group mb-4">
+<input id="taskInput" class="form-control" type="text" placeholder="Enter a task" required>
+<button class="btn btn-primary" type="submit">Add Task</button>
+</form>
+
+<ul id="taskList" class="list-group"></ul>
+</div>
+</main>
+
+<script>
+const form = document.getElementById("taskForm"); const input = document.getElementById("taskInput"); const taskList = document.getElementById("taskList");
+
+form.addEventListener("submit", function (event) { event.preventDefault();
+const task = input.value.trim(); if (task === "") {
+return;
+}
+
+const item = document.createElement("li"); item.className =
+"list-group-item d-flex justify-content-between align-items-center gap-3";
+
+const text = document.createElement("span"); text.className = "task-text";
+text.textContent = task;
+ 
+text.addEventListener("click", function () { text.classList.toggle("completed");
+});
+
+const deleteButton = document.createElement("button"); deleteButton.textContent = "Delete";
+deleteButton.className = "btn btn-danger btn-sm";
+
+deleteButton.addEventListener("click", function () {
+JSS MAHAVIDYAPEETHA
+
+
+
+
+item.remove();
+});
+
+item.append(text, deleteButton); taskList.appendChild(item);
+input.value = ""; input.focus();
+});
+</script>
+</body>
+</html>
